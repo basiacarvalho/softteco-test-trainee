@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyNotes</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__img"
+        src="./images/notes.png"
+        alt="two notes with a push pin"
+        width="30"
+      >
+      <a class="logo" href="#"><span class="logo__accent">Easy</span>Notes</a>
+    </header>
+    <main>
+      <section class="section">
+        <h1 class="section__header">EasyNotes</h1>
+        <form class="form">
+          <div class="form__container">
+            <label class="form__label" for="form_note_title">Note title:</label>
+            <input
+              class="form__input"
+              type="text"
+              id="form_note_title"
+              placeholder="title"
+              required
+              minlength="2"
+              maxlength="50"
+            >
+            <label class="form__label" for="form_note_text">Note Text:</label>
+            <input
+              class="form__input"
+              type="text"
+              id="form_note_text"
+              placeholder="text"
+              required
+              minlength="2"
+              maxlength="255"
+            >
+            <button class="form__button" type="submit">Add</button>
+          </div>
+        </form>
+      </section>
+      <section class="section">
+        <h2 class="section__header">My EasyNotes</h2>
+        <ul class="notes">
+          <li class="note">
+            <h3 class="note__title">My note's title</h3>
+            <p class="note__text">This is my note's text.</p>
+            <button class="note__button" type="button">Delete</button>
+          </li>
+          <li class="note">
+            <h3 class="note__title">My note's title</h3>
+            <p class="note__text">This is my note's text.</p>
+            <button class="note__button" type="button">Delete</button>
+          </li>
+          <li class="note">
+            <h3 class="note__title">My note's title</h3>
+            <p class="note__text">This is my note's text.</p>
+            <button class="note__button" type="button">Delete</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">© 2024 EasyNotes</p>
+    </footer>
+  </body>
+</html>
