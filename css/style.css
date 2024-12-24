@@ -1,0 +1,196 @@
+:root {
+  --active-color: #77b0aa;
+  --background-color-light:  #FAF0E6;
+  --background-color-dark: #135D66;
+  --text-color-light:#fff;
+  --button-color: #f5a623;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+  color: var(--text-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--background-color-light);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+textarea,
+input[type=text] {
+  font-family: "Nunito", sans-serif;
+}
+
+.button {
+  border: none;
+  color: var(--text-color-light);
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 0.7rem;
+}
+
+.header {
+  background-color: var(--background-color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 3% 5%;
+  width: 100vw;
+}
+
+.header__img {
+  background-color: var(--background-color-light);
+  border-radius: 10px;
+  width: 55px;
+  height: 57px;
+  padding: 1.2% 2%;
+}
+
+.logo {
+  color: var(--background-color-light);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.logo__accent {
+  color: var(--active-color);
+}
+
+.header .logo__accent {
+  font-size: 1.7rem;
+  transform: rotate(-10deg);
+  display: inline-block;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+.section__header {
+  display: none;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  width: 85vw;
+  border: 3px dashed var(--active-color);
+  border-radius: 10px;
+  padding: 4%;
+}
+
+.form__label {
+  color: var(--background-color-dark);
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.form__input {
+  background-color: var(--background-color-light);
+  margin-bottom: 10px;
+  padding: 10px 11px 30px;
+  border-radius: 10px;
+  border: 1.5px solid var(--background-color-dark);
+  font-size: 0.8rem;
+  outline: none;
+}
+
+.form__input::placeholder {
+  color: var(--active-color);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.form__button:focus,
+.form__input:hover {
+  border-color: var(--active-color);
+}
+
+.form__button {
+  background-color: var(--background-color-light);
+  background-color: var(--button-color);
+  font-weight: 700;
+  opacity: 0.9;
+  padding: 0.5rem 0.8rem;
+  margin: auto;
+  width: 60%;
+}
+
+.form__button:focus,
+.form__button:hover {
+  outline: none;
+  opacity: 80%;
+  background-color: var(--active-color);
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--text-color-light);
+  background-color: var(--background-color-dark);
+  opacity: 80%;
+  width: 70wv;
+  padding: 0.5rem 0.6rem 0.2rem ;
+  background: linear-gradient(225deg, var(--button-color) 15px, var(--background-color-dark) 0px);
+}
+
+.note:not(:last-child) {
+margin-bottom: 10px;
+}
+
+.note__title {
+  margin-bottom: 10px;
+  border-bottom: 1px solid ;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.note__text {
+  margin-bottom: 10px;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+
+.note__button {
+  align-self: flex-end;
+  margin-bottom: 10px;
+  background-color: var(--active-color);
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  width: 30%;
+  border: 2px solid transparent;
+}
+
+.note__button:focus,
+.note__button:hover {
+  border: 2px solid var(--button-color);
+}
+
+.footer {
+  background-color: var(--background-color-dark);
+  color: var(--background-color-light);
+  font-size: 0.8rem;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  padding: 2% 0;
+}
