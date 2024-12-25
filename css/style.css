@@ -212,9 +212,9 @@ input[type=text] {
 
   .header__img {
     border-radius: 10px;
-    width: 75px;
-    height: 77px;
-    padding: 1.2% 2%;
+    width: 85px;
+    height: 87px;
+    padding: 1% 1.5%;
   }
 
   .logo {
@@ -330,9 +330,9 @@ input[type=text] {
 
   .header__img {
     border-radius: 15px;
-    width: 85px;
-    height: 87px;
-    padding: 1% 1.5%;
+    width: 95px;
+    height: 97px;
+    padding: 0.8% 1%;
   }
 
   .logo {
