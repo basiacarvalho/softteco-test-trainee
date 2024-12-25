@@ -92,7 +92,7 @@ input[type=text] {
 .form__container {
   display: flex;
   flex-direction: column;
-  width: 85vw;
+  width: 80vw;
   border: 3px dashed var(--active-color);
   border-radius: 10px;
   padding: 4%;
@@ -143,6 +143,10 @@ input[type=text] {
   background-color: var(--active-color);
 }
 
+.notes {
+  width: 80vw;
+}
+
 .note {
   display: flex;
   flex-direction: column;
@@ -150,7 +154,6 @@ input[type=text] {
   color: var(--text-color-light);
   background-color: var(--background-color-dark);
   opacity: 80%;
-  width: 85vw;
   height: fit-content;
   padding: 0.8rem ;
   background: linear-gradient(225deg, var(--button-color) 15px, var(--background-color-dark) 0px);
@@ -380,7 +383,6 @@ input[type=text] {
 
   .notes {
     gap: 20px;
-    width: 100vw;
   }
   
   .note {
