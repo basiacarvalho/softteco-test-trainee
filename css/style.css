@@ -26,7 +26,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -79,6 +79,10 @@ input[type=text] {
 
 .section {
   padding: 30px 0;
+}
+
+.section:not(:last-child) {
+ border-bottom: 1.5px solid var(--active-color);
 }
 
 .section__header {
@@ -195,6 +199,7 @@ input[type=text] {
   text-align: center;
   padding: 2% 0;
   align-self: flex-end;
+  margin-top: auto;
 }
 
 @media (min-width: 768px) {
@@ -226,6 +231,12 @@ input[type=text] {
 
   .section {
     padding: 40px 0;
+  }
+
+  .section:not(:last-child) {
+    border-bottom: 2px solid var(--active-color);
+    width: 95%;
+    margin: auto;
   }
 
   .form__container {
@@ -304,4 +315,8 @@ input[type=text] {
     font-size: 1rem;
     font-weight: 500;
   }
+}
+
+@media (min-width: 1200px) {
+
 }
