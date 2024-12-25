@@ -146,19 +146,18 @@ input[type=text] {
 .note {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   color: var(--text-color-light);
   background-color: var(--background-color-dark);
   opacity: 80%;
   width: 85vw;
   height: fit-content;
-  padding: 0.5rem 0.6rem 0.2rem ;
+  padding: 0.8rem ;
   background: linear-gradient(225deg, var(--button-color) 15px, var(--background-color-dark) 0px);
 }
 
 .note:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .note__title {
@@ -177,7 +176,6 @@ input[type=text] {
 
 .note__button {
   align-self: flex-end;
-  margin-bottom: 10px;
   background-color: var(--active-color);
   font-weight: 500;
   padding: 0.2rem 0.5rem;
@@ -204,7 +202,6 @@ input[type=text] {
 
 @media (min-width: 768px) {
   .button {
-    border-radius: 10px;
     font-size: 1rem;
   }
 
@@ -269,21 +266,26 @@ input[type=text] {
     margin-left: 50%;
     padding: 0.6rem 0.8rem;
     width: 45%;
+    margin-top: 2%;
   }
   
   .notes {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 5px 15px;
+    gap: 15px;
     width: 100vw;
     padding: 0 5%;
   }
   
   .note {
     width: 31.8%;
-    padding: 0.7rem 0.8rem 0.4rem ;
+    padding: 1rem;
     background: linear-gradient(225deg, var(--button-color) 20px, var(--background-color-dark) 0px);
+  }
+
+  .note:not(:last-child) {
+    margin-bottom: 0px;
   }
 
   .note__title {
@@ -300,8 +302,6 @@ input[type=text] {
   }
 
   .note__button {
-    margin-bottom: 12px;
-    padding: 0.2rem 0.5rem;
     width: 50%;
     border: 3px solid transparent;
   }
@@ -318,5 +318,99 @@ input[type=text] {
 }
 
 @media (min-width: 1200px) {
+  .button {
+    border-radius: 15px;
+    font-size: 1.5rem;
+  }
 
+  .header {
+    gap: 30px;
+    padding: 1.5% 3%;
+  }
+
+  .header__img {
+    border-radius: 15px;
+    width: 85px;
+    height: 87px;
+    padding: 1% 1.5%;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .header .logo__accent {
+    font-size: 2.7rem;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .form__container {
+    width: 50vw;
+    border: 5px dashed var(--active-color);
+    border-radius: 20px;
+    padding: 3%;
+    margin-left: 25%;
+  }
+
+  .form__label {
+    font-size: 1.5rem;
+  }
+
+  .form__input {
+    margin-bottom: 25px;
+    padding: 14px 15px;
+    border: 2.5px solid var(--background-color-dark);
+    font-size: 1.2rem;
+  }
+
+  .form__input::placeholder {
+    font-size: 1.2rem;
+  }
+
+  .form__button {
+    margin-left: 50%;
+    padding: 0.8rem 1rem;
+    width: 45%;
+  }
+
+  .notes {
+    gap: 20px;
+    width: 100vw;
+  }
+  
+  .note {
+    width: 32.3%;
+    padding: 1.2rem;
+    background: linear-gradient(225deg, var(--button-color) 25px, var(--background-color-dark) 0px);
+  }
+
+  .note__title {
+    margin-bottom: 18px;
+    border-bottom: 2.5px solid ;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+
+  .note__text {
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+  }
+
+  .note__button {
+    padding: 0.2rem 0.5rem;
+    width: 40%;
+    border: 3.5px solid transparent;
+  }
+
+  .note__button:focus,
+  .note__button:hover {
+    border: 3.5px solid var(--button-color);
+  }
+
+  .footer {
+    font-size: 1.5rem;
+  }
 }
