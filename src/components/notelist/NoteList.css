@@ -1,0 +1,20 @@
+.notes {
+  width: 80vw;
+}
+
+@media (min-width: 768px) {
+   .notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 100vw;
+    padding: 0 5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .notes {
+    gap: 20px;
+  }
+}

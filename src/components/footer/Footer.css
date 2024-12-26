@@ -1,0 +1,25 @@
+.footer {
+  background-color: var(--background-color-dark);
+  color: var(--background-color-light);
+  font-size: 0.8rem;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  padding: 2% 0;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    font-size: 1.5rem;
+  }
+}
+

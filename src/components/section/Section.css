@@ -1,0 +1,25 @@
+.section {
+  padding: 30px 0;
+}
+
+.section:first-of-type {
+ border-bottom: 1.5px solid var(--active-color);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .section:first-of-type {
+    border-bottom: 2px solid var(--active-color);
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+   .section {
+    padding: 60px 0;
+  }
+}

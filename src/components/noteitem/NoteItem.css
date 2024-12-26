@@ -1,0 +1,113 @@
+.note {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--text-color-light);
+  background-color: var(--background-color-dark);
+  opacity: 80%;
+  height: fit-content;
+  padding: 0.8rem ;
+  background: linear-gradient(225deg, var(--button-color) 15px, var(--background-color-dark) 0px);
+}
+
+.note:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.note__title {
+  margin-bottom: 10px;
+  border-bottom: 1px solid ;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.note__text {
+  margin-bottom: 10px;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  text-align: left;
+  word-break: break-word;
+}
+
+.note__button {
+  align-self: flex-end;
+  background-color: var(--active-color);
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  width: 30%;
+  max-width: 80px;
+  border: 2px solid transparent;
+}
+
+.note__button:focus,
+.note__button:hover {
+  border: 2px solid var(--button-color);
+}
+
+@media (min-width: 768px) {
+  .note {
+    width: 31.8%;
+    padding: 1rem;
+    background: linear-gradient(225deg, var(--button-color) 20px, var(--background-color-dark) 0px);
+  }
+
+  .note:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
+  .note__title {
+    margin-bottom: 15px;
+    border-bottom: 2px solid ;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  .note__text {
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  .note__button {
+    width: 50%;
+    max-width: 90px;
+    border: 3px solid transparent;
+  }
+
+  .note__button:focus,
+  .note__button:hover {
+    border: 3px solid var(--button-color);
+  }
+}
+
+@media (min-width: 1200px) {
+   .note {
+    width: 32.1%;
+    padding: 1.2rem;
+    background: linear-gradient(225deg, var(--button-color) 25px, var(--background-color-dark) 0px);
+  }
+
+  .note__title {
+    margin-bottom: 18px;
+    border-bottom: 2.5px solid ;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+
+  .note__text {
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+  }
+
+  .note__button {
+    padding: 0.2rem 0.5rem;
+    width: 40%;
+    max-width: 120px;
+    border: 3.5px solid transparent;
+  }
+
+  .note__button:focus,
+  .note__button:hover {
+    border: 3.5px solid var(--button-color);
+  }
+}
