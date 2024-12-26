@@ -11,7 +11,6 @@ function displayNote(note) {
 function NoteList() {
   return (
     <ul className="notes">
-      {/* <NoteItem /> */}
       {notes.map(displayNote)}
     </ul>
   );
