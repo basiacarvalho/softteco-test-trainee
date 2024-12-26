@@ -113,6 +113,7 @@ input[type=text] {
   border: 1.5px solid var(--background-color-dark);
   font-size: 0.8rem;
   outline: none;
+  text-align: left;
 }
 
 .form__input::placeholder {
@@ -174,7 +175,9 @@ input[type=text] {
   margin-bottom: 10px;
   font-weight: lighter;
   font-size: 0.8rem;
-  word-break: break-all; 
+  word-break: break-all;
+  text-align: left;
+  text-align: left;
 }
 
 .note__button {
