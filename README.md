@@ -35,14 +35,13 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload when you make changes. You may also see any lint errors in the console.
 
 ### Visuals
 ![Screenshot](./src/images/easy_notes1.jpg)
 
 ### Project Status
-- Completed (with the possiblity for future adaption)
+- Completed (with the possiblity for future adaption)\
 The basic concepts of the project have been met, however further ideas may be implemented and added in the future.
 
 ### Author
