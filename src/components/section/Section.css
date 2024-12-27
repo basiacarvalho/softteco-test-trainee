@@ -14,7 +14,6 @@
   .section:first-of-type {
     border-bottom: 2px solid var(--active-color);
     width: 95%;
-    margin: auto;
   }
 }
 

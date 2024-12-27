@@ -1,5 +1,6 @@
 .notes {
   width: 80vw;
+  max-width: 420px;
 }
 
 @media (min-width: 768px) {
@@ -10,6 +11,7 @@
     gap: 15px;
     width: 100vw;
     padding: 0 5%;
+    max-width: 100%;
   }
 }
 

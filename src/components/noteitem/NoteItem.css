@@ -82,7 +82,7 @@
 
 @media (min-width: 1200px) {
    .note {
-    width: 32.1%;
+    width: 23.5%;
     padding: 1.2rem;
     background: linear-gradient(225deg, var(--button-color) 25px, var(--background-color-dark) 0px);
   }

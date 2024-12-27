@@ -5,6 +5,7 @@
   border: 3px dashed var(--active-color);
   border-radius: 10px;
   padding: 4%;
+  max-width: 420px;
 }
 
 .form__label {
@@ -43,7 +44,7 @@
   opacity: 0.9;
   padding: 0.5rem 0.8rem;
   margin: auto;
-  width: 60%;
+  width: 50%;
 }
 
 .form__button:focus,
@@ -55,11 +56,12 @@
 
 @media (min-width: 768px) {
   .form__container {
-    width: 65vw;
+    width: 50vw;
     border: 4px dashed var(--active-color);
     border-radius: 15px;
     padding: 4.5%;
-    margin-left: 15%;
+    margin: 0 auto;
+    max-width: 100%;
   }
 
   .form__label {
@@ -81,20 +83,20 @@
   }
 
   .form__button {
-    margin-left: 50%;
     padding: 0.6rem 0.8rem;
-    width: 45%;
+    width: 40%;
     margin-top: 2%;
+    margin-right: 0px;
+    margin-left: auto;
   }
 }
 
 @media (min-width: 1200px) {
   .form__container {
-    width: 50vw;
+    width: 30vw;
     border: 5px dashed var(--active-color);
     border-radius: 20px;
-    padding: 3%;
-    margin-left: 25%;
+    padding: 1.5%;
   }
 
   .form__label {
@@ -113,8 +115,10 @@
   }
 
   .form__button {
-    margin-left: 50%;
     padding: 0.8rem 1rem;
-    width: 45%;
+    min-width: 220px;
+    width: 35%;
+    margin-right: 0px;
+    margin-left: auto;
   }
 }
