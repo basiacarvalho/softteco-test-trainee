@@ -1,17 +1,16 @@
 import './NoteList.css'
 import NoteItem from '../noteitem/NoteItem';
-import notes from '../../notes';
 
-function displayNote(note) {
+function displayNote(noteItem) {
   return (
-    <NoteItem key={note.key} noteTitle={note.title} noteContent={note.content} />
+    <NoteItem key={noteItem.key} noteTitle={noteItem.title} noteContent={noteItem.content} />
   )
 }
 
-function NoteList() {
+function NoteList(props) {
   return (
     <ul className="notes">
-      {notes.map(displayNote)}
+      {props.notesList.map(displayNote)}
     </ul>
   );
 }
