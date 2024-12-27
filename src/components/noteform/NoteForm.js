@@ -59,7 +59,7 @@ function NoteForm(props) {
           maxLength="250"
         ></textarea>
         <button
-          className="form__button button" type="submit" onClick={submitNote}>Add</button>
+          className="form__button button" type="submit" onSubmit={submitNote}>Add</button>
       </div>
     </form>
   );
