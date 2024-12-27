@@ -56,29 +56,28 @@
 
 @media (min-width: 768px) {
   .form__container {
-    width: 50vw;
-    border: 4px dashed var(--active-color);
+    width: 35vw;
     border-radius: 15px;
-    padding: 4.5%;
     margin: 0 auto;
     max-width: 100%;
+    padding: 2%;
   }
 
   .form__label {
     margin-bottom: 10px;
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .form__input {
     margin-bottom: 15px;
     padding: 12px 15px;
-    border: 2px solid var(--background-color-dark);
-    font-size: 1rem;
+    border: 1.8px solid var(--background-color-dark);
+    font-size: 0.9rem;
   }
 
   .form__input::placeholder {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
   }
 
@@ -93,31 +92,31 @@
 
 @media (min-width: 1200px) {
   .form__container {
-    width: 30vw;
-    border: 5px dashed var(--active-color);
+    width: 22vw;
+    border: 4px dashed var(--active-color);
     border-radius: 20px;
-    padding: 1.5%;
+    padding: 1.2%;
   }
 
   .form__label {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .form__input {
-    margin-bottom: 25px;
-    padding: 14px 15px;
-    border: 2.5px solid var(--background-color-dark);
-    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid var(--background-color-dark);
+    font-size: 1rem;
   }
 
   .form__input::placeholder {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .form__button {
-    padding: 0.8rem 1rem;
-    min-width: 220px;
-    width: 35%;
+    padding: 0.5rem;
+    min-width: 180px;
+    width: 25%;
     margin-right: 0px;
     margin-left: auto;
   }

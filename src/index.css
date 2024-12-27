@@ -40,13 +40,13 @@ input[type=text] {
 
 @media (min-width: 768px) {
   .button {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
 @media (min-width: 1200px) {
   .button {
     border-radius: 15px;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
