@@ -1,5 +1,5 @@
 ### softteco-task
-# 📌📝 EasyNotes ✏️📅
+# 📌📝 EasyNotes ✏️📅 
 
 ## Table of contents
   - [Project Title](#easynotes)
@@ -40,8 +40,6 @@ You may also see any lint errors in the console.
 
 ### Visuals
 ![Screenshot](./src/images/easy_notes1.jpg)
-
-![Screenshot](./src/images/easy_notes2.jpg)
 
 ### Project Status
 - Completed (with the possiblity for future adaption)
