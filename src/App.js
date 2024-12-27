@@ -17,17 +17,25 @@ function App() {
     })
   }
 
+  function deleteNote(key) {
+    setNotesList(prevNotes => {
+      return prevNotes.filter((noteItem) => {
+        return noteItem.key !== key;
+      })
+    })
+    console.log("Note was deleted");
+  }
 
   return (
     <main className="container">
       <Header />
       <Section>
         <h1 className="section__header">EasyNotes</h1>
-        <NoteForm onAdd={addNote} />
+        <NoteForm onAdd={addNote}/>
       </Section>
       <Section>
         <h2 className="section__header">My EasyNotes</h2>
-        <NoteList notesList={notesList} />
+        <NoteList notesList={notesList} onDelete={deleteNote} />
       </Section>
       <Footer />
     </main>
