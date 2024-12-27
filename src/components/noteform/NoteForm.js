@@ -24,13 +24,14 @@ function NoteForm(props) {
   }
 
   function submitNote(event) {
+    event.preventDefault();
     props.onAdd({ ...note, key: uuidv4()});
     setNote(initialNoteState);
-    event.preventDefault();
+    
   }
 
   return (
-    <form className="form">
+    <form className="form" onSubmit={submitNote}>
       <div className="form__container">
         <label className="form__label" htmlFor="form_note_title">Note Title:</label>
         <input
@@ -59,7 +60,7 @@ function NoteForm(props) {
           maxLength="250"
         ></textarea>
         <button
-          className="form__button button" type="submit" onSubmit={submitNote}>Add</button>
+          className="form__button button" type="submit">Add</button>
       </div>
     </form>
   );
