@@ -11,7 +11,9 @@ function NoteList(props) {
 
   return (
     <ul className="notes">
-      {props.notesList.map((noteItem) => {
+      {props.notesList.filter((noteItem) => {
+        return noteItem.title.toLowerCase().trim().includes(props.searchValue.toLowerCase().trim());
+      }).map((noteItem) => {
         return displayNote(noteItem)
       })}
     </ul>

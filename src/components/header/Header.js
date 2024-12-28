@@ -3,7 +3,7 @@ import img from '../../images/notes.png'
 import { Link } from 'react-router-dom';
 import SearchBar from '../searchbar/SearchBar';
 
-function Header() {
+function Header(props) {
   return (
     <header className="header">
       <div className='logo__container'>
@@ -14,7 +14,7 @@ function Header() {
         />
         <Link className="logo" to="/"><span className="logo logo__accent">Easy</span>Notes</Link>
       </div>
-      <SearchBar/>
+      <SearchBar onChangeSearchValue={props.onChangeSearchValue} />
     </header>
   );
 }

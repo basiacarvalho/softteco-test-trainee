@@ -1,18 +1,26 @@
 import'./SearchBar.css';
 
-function SearchBar ({ handleSubmit }) {
+function SearchBar(props) {
+
+  function handleChange(event) {
+    props.onChangeSearchValue(event.target.value);
+  }
+
   return (
-      <form className="search-form " onSubmit={handleSubmit}>
+    <search>
+      <form className="search-form ">
         <input
           className="search-form__input"
-          type="text"
+          type="search"
           autoComplete="off"
           autoFocus
           placeholder="Search notes"
-          name="searchName"
+         name="searchContent"
+         onChange={handleChange}
         ></input>
-        <button type="submit" className="search-form__button"></button>
+        <svg className="search-form__img"></svg>
       </form>
+    </search>
   );
 };
 

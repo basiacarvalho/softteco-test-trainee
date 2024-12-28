@@ -12,7 +12,8 @@ import { useEffect } from 'react';
 
 function App() {
 
-  const [notesList, setNotesList] = useState(notes)
+  const [notesList, setNotesList] = useState(notes);
+  const [searchValue, setSearchValue] = useState("");
 
   function addNote(newNote) {
     setNotesList(prevNotes => {
@@ -53,14 +54,14 @@ function App() {
 
   return (
     <main className="container">
-      <Header />
+      <Header onChangeSearchValue={setSearchValue} />
       <Section>
         <h1 className="section__header">EasyNotes</h1>
         <NoteForm onAdd={addNote}/>
       </Section>
       <Section>
         <h2 className="section__header">My EasyNotes</h2>
-        <NoteList notesList={notesList} onDelete={deleteNote} />
+        <NoteList notesList={notesList} searchValue={searchValue} onDelete={deleteNote} />
       </Section>
       <Footer>
         <BtnScroll/>
