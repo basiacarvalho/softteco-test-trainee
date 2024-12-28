@@ -15,6 +15,7 @@
 }
 
 .note__date {
+  color: var(--active-color);
   font-style: italic;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
@@ -32,7 +33,7 @@
 
 .note__text {
   margin-bottom: 10px;
-  font-weight: lighter;
+  font-weight: normal;
   font-size: 0.8rem;
   text-align: left;
   word-break: break-word;
@@ -76,7 +77,6 @@
 
   .note__text {
     margin-bottom: 20px;
-    font-weight: normal;
     font-size: 0.9rem;
   }
 
@@ -106,7 +106,6 @@
   .note__title {
     margin-bottom: 16px;
     border-bottom: 2.5px solid ;
-    font-weight: 500;
     font-size: 1.4rem;
   }
 

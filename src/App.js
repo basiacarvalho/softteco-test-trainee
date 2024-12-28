@@ -9,7 +9,6 @@ import BtnScroll from './components/btnscroll/BtnScroll';
 import notes from './notes';
 import { useEffect } from 'react';
 
-
 function App() {
 
   const [notesList, setNotesList] = useState(notes);
@@ -51,7 +50,6 @@ function App() {
     headerObserver.observe(headerElement);
    })
   
-
   return (
     <main className="container">
       <Header onChangeSearchValue={setSearchValue} />

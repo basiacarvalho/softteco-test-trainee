@@ -6,9 +6,21 @@
   width: 80vw;
   max-width: 420px;
   background-color: var(--text-color-light);
+  outline:  3px solid var(--active-color);
   border-radius: 3px;
   overflow: hidden;
   border: none;
+}
+
+.search-form:focus,
+.search-form:hover {
+  background-color: var(--background-color-light);
+  outline: 3px solid var(--button-color);
+}
+
+.search-form:focus *,
+.search-form:hover *{
+  background-color: var(--background-color-light);
 }
 
 .search-form__img {

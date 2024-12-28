@@ -11,7 +11,7 @@ function NoteForm(props) {
     content: "",
   }
 
-  const [note, setNote] = useState(initialNoteState)
+  const [note, setNote] = useState(initialNoteState);
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -32,11 +32,9 @@ function NoteForm(props) {
 
     const newDate = `${day}/${month}/${year}`;
 
-
     event.preventDefault();
     props.onAdd({ ...note, key: uuidv4(), date: newDate});
     setNote(initialNoteState);
-    
   }
 
   return (

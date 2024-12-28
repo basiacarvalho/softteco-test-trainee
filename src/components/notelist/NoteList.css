@@ -4,7 +4,7 @@
 }
 
 @media (min-width: 768px) {
-   .notes {
+  .notes {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;

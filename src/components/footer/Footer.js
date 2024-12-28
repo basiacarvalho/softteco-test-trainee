@@ -1,8 +1,7 @@
 import './Footer.css';
 
-function Footer({children}) {
+function Footer({ children }) {
   const currentYear = new Date().getFullYear();
-
   return (
     <footer className="footer">
       <p className="footer__text">© {currentYear} EasyNotes</p>

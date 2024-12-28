@@ -14,10 +14,11 @@ function SearchBar(props) {
           type="search"
           autoComplete="off"
           autoFocus
-          placeholder="Search notes"
-         name="searchContent"
-         onChange={handleChange}
-        ></input>
+          placeholder="Search notes by title"
+          name="searchContent"
+          onChange={handleChange}
+        >
+        </input>
         <svg className="search-form__img"></svg>
       </form>
     </search>
