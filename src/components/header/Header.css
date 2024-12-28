@@ -1,14 +1,20 @@
 .header {
   background-color: var(--background-color-dark);
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 15px;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
   padding: 2.5% 5%;
   width: 100vw;
 }
 
-.header__img {
+.logo__container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo__img {
   background-color: var(--background-color-light);
   border-radius: 10px;
   width: 55px;
@@ -34,11 +40,17 @@
 
 @media (min-width: 768px) {
   .header {
-    gap: 18px;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 1% 4%;
+    gap: 0;
   }
 
-  .header__img {
+  .logo__container {
+    gap: 18px;
+  }
+
+  .logo__img {
     border-radius: 10px;
     padding: 0.2% 1%;
   }
@@ -55,11 +67,14 @@
 
 @media (min-width: 1200px) {
   .header {
-    gap: 20px;
-    padding: 0.5% 3%;
+    padding: 0.6% 3%;
   }
 
-  .header__img {
+  .logo__container {
+    gap: 20px;
+  }
+
+  .logo__img {
     border-radius: 15px;
     width: 65px;
     height: 67px;

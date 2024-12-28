@@ -1,0 +1,89 @@
+.search-form {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  width: 80vw;
+  max-width: 420px;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  border: none;
+}
+
+.search-form__button {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 0;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg enable-background='new 0 0 64 64' height='64px' id='Layer_1' version='1.1' viewBox='0 0 64 64' width='64px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg%3E%3Ccircle cx='32' cy='25' fill='none' r='16' stroke='%234D4D4D' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2'/%3E%3Cline fill='none' stroke='%234D4D4D' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' x1='40.9' x2='38.8' y1='44.1' y2='39.5'/%3E%3Cline fill='none' stroke='%234D4D4D' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='4' x1='40.9' x2='46' y1='44.1' y2='55'/%3E%3Cpath d='M36.2 13.7 c2.7 1 4.9 2.9 6.3 5.3' fill='none' stroke='%234D4D4D' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: none;
+  margin: auto;
+}
+
+.search-form__button:hover {
+  opacity: 1;
+}
+
+.search-form__input {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font: inherit;
+  font-size: 0.8rem;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 4px;
+}
+
+.search-form__input::placeholder {
+  font: inherit;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .search-form {
+    width: 50vw;
+    border-radius: 4px;
+  }
+
+  .search-form__button {
+    width: 40px;
+    height: 40px; 
+  }
+
+  .search-form__input {
+    font-size: 0.9rem;
+  }
+
+  .search-form__input::placeholder {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .search-form {
+    width: 65vw;
+    border-radius: 5px;
+  }
+
+  .search-form__button {
+    width: 42px;
+    height: 42px; 
+  }
+
+  .search-form__input {
+    font-size: 1rem;
+  }
+
+  .search-form__input::placeholder {
+    font-size: 1rem;
+  }
+}

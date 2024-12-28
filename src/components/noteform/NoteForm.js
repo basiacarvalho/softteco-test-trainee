@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import './NoteForm.css';
+import React, { useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
 
 function NoteForm(props) {
@@ -40,11 +40,11 @@ function NoteForm(props) {
   }
 
   return (
-    <form className="form" onSubmit={submitNote}>
-      <div className="form__container">
-        <label className="form__label" htmlFor="form_note_title">Note Title:</label>
+    <form className="note-form" onSubmit={submitNote}>
+      <div className="note-form__container">
+        <label className="note-form__label" htmlFor="form_note_title">Note Title:</label>
         <input
-          className="form__input"
+          className="note-form__input"
           type="text"
           id="form_note_title"
           name="title"
@@ -55,9 +55,9 @@ function NoteForm(props) {
           minLength="2"
           maxLength="50"
         />
-        <label className="form__label" htmlFor="form_note_text">Note Text:</label>
+        <label className="note-form__label" htmlFor="form_note_text">Note Text:</label>
         <textarea
-          className="form__input"
+          className="note-form__input"
           id="form_note_text"
           name="content"
           onChange={handleChange}
@@ -69,7 +69,7 @@ function NoteForm(props) {
           maxLength="250"
         ></textarea>
         <button
-          className="form__button button" type="submit">Add</button>
+          className="note-form__button button" type="submit">Add</button>
       </div>
     </form>
   );
