@@ -17,9 +17,9 @@
 .logo__img {
   background-color: var(--background-color-light);
   border-radius: 10px;
-  width: 55px;
-  height: 57px;
-  padding: 1.2% 2%;
+  width: 50px;
+  height: 52px;
+  padding: 1% 1.5%;
 }
 
 .logo {
@@ -38,6 +38,14 @@
   display: inline-block;
 }
 
+@media (min-width: 360px) {
+  .logo__img {
+    width: 50px;
+    height: 52px;
+    padding: 0.5% 1.1%;
+  }
+}
+
 @media (min-width: 768px) {
   .header {
     flex-direction: row;
@@ -51,8 +59,10 @@
   }
 
   .logo__img {
+    width: 52px;
+    height: 54px;
     border-radius: 10px;
-    padding: 0.2% 1%;
+    padding: 0.5% 1%;
   }
 
   .logo {
@@ -78,7 +88,7 @@
     border-radius: 15px;
     width: 65px;
     height: 67px;
-    padding: 0.2% 0.4%;
+    padding: 0.4% 1.4%;
   }
 
   .logo {
