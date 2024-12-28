@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/softteco-test-trainee/static/css/main.3cf314b8.css",
-    "main.js": "/softteco-test-trainee/static/js/main.b0f12042.js",
+    "main.css": "/softteco-test-trainee/static/css/main.4309b58e.css",
+    "main.js": "/softteco-test-trainee/static/js/main.7a29610e.js",
     "static/media/notes.png": "/softteco-test-trainee/static/media/notes.e73f978adfff446f2447.png",
     "index.html": "/softteco-test-trainee/index.html",
-    "main.3cf314b8.css.map": "/softteco-test-trainee/static/css/main.3cf314b8.css.map",
-    "main.b0f12042.js.map": "/softteco-test-trainee/static/js/main.b0f12042.js.map"
+    "main.4309b58e.css.map": "/softteco-test-trainee/static/css/main.4309b58e.css.map",
+    "main.7a29610e.js.map": "/softteco-test-trainee/static/js/main.7a29610e.js.map"
   },
   "entrypoints": [
-    "static/css/main.3cf314b8.css",
-    "static/js/main.b0f12042.js"
+    "static/css/main.4309b58e.css",
+    "static/js/main.7a29610e.js"
   ]
 }
