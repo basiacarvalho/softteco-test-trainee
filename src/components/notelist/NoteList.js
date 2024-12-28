@@ -5,7 +5,7 @@ function NoteList(props) {
   
   function displayNote(noteItem) {
     return (
-      <NoteItem key={noteItem.key} id={noteItem.key} noteTitle={noteItem.title} noteContent={noteItem.content} deleteNote={props.onDelete} />
+      <NoteItem key={noteItem.key} id={noteItem.key} noteTitle={noteItem.title} noteContent={noteItem.content} noteDate={noteItem.date} deleteNote={props.onDelete} />
     )
   }
 

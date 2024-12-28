@@ -14,9 +14,18 @@
   margin-bottom: 15px;
 }
 
-.note__title {
+.note__date {
+  font-style: italic;
+  letter-spacing: 0.5px;
   margin-bottom: 10px;
-  border-bottom: 1px solid ;
+  font-weight: normal;
+  font-size: 0.7rem;
+}
+
+.note__title {
+  color: var(--text-color-light);
+  margin-bottom: 10px;
+  border-bottom: 1px solid;
   font-weight: 500;
   font-size: 1rem;
 }
@@ -55,6 +64,10 @@
     margin-bottom: 0px;
   }
 
+  .note__date {
+    font-size: 0.8rem;
+  }
+
   .note__title {
     margin-bottom: 15px;
     border-bottom: 2px solid ;
@@ -80,10 +93,14 @@
 }
 
 @media (min-width: 1200px) {
-   .note {
+  .note {
     width: 23.5%;
     padding: 1.2rem;
     background: linear-gradient(225deg, var(--button-color) 25px, var(--background-color-dark) 0px);
+  }
+
+  .note__date {
+    font-size: 1rem;
   }
 
   .note__title {

@@ -6,6 +6,7 @@ function NoteForm(props) {
 
   const initialNoteState = {
     key: "",
+    date: "",
     title: "",
     content: "",
   }
@@ -24,8 +25,16 @@ function NoteForm(props) {
   }
 
   function submitNote(event) {
+    const now = new Date();
+    const day = `${now.getDate()}`.padStart(2, 0);
+    const month = `${now.getMonth() + 1}`.padStart(2, 0);
+    const year = now.getFullYear();
+
+    const newDate = `${day}/${month}/${year}`;
+
+
     event.preventDefault();
-    props.onAdd({ ...note, key: uuidv4()});
+    props.onAdd({ ...note, key: uuidv4(), date: newDate});
     setNote(initialNoteState);
     
   }
