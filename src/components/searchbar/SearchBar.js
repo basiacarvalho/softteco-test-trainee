@@ -7,7 +7,7 @@ function SearchBar(props) {
   }
 
   return (
-    <search>
+    <search className='search-container'>
       <form className="search-form ">
         <input
           className="search-form__input"
